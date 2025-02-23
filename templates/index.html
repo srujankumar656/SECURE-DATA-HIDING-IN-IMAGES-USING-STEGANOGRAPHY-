@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Steganography App</h1>
+
+        <form id="encryptForm" action="/encrypt" method="post" enctype="multipart/form-data">
+            <label for="image">Select an Image:</label>
+            <input type="file" id="image" name="image" required accept=".png, .jpg, .jpeg, .bmp, .tiff">
+
+            <label for="message">Secret Message:</label>
+            <input type="text" id="message" name="message" placeholder="Enter secret message" required>
+
+            <label for="password">Passcode:</label>
+            <input type="password" id="password" name="password" placeholder="Enter passcode" required>
+
+            <button type="submit" class="encrypt">🔐 Encrypt Message</button>
+        </form>
+
+        <hr>
+
+        <form id="decryptForm">
+            <label for="decryptImage">Upload Encrypted Image:</label>
+            <input type="file" id="decryptImage" required accept=".png, .jpg, .jpeg, .bmp, .tiff">
+
+            <label for="decryptPassword">Passcode:</label>
+            <input type="password" id="decryptPassword" placeholder="Enter passcode" required>
+
+            <button type="button" class="decrypt" onclick="decryptMessage()">🔓 Decrypt Message</button>
+        </form>
+
+        <p class="message-output" id="decryptedMessage"></p>
+    </div>
+</body>
+</html>
