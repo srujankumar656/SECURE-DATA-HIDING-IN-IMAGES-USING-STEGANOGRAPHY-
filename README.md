@@ -4,6 +4,10 @@
 ## 📌 Project Overview
 This project is a **Steganography App** that allows users to **hide and retrieve secret messages inside images** securely using **Flask, OpenCV, and JavaScript**.
 
+# 📑 Project Presentation
+> For a detailed overview of the project, you can refer to the project presentation:
+
+[](./AICTE%20x%20IBM-INTERN-PROJECT-PPT.pptx)
 ## 🚀 Features
 - **Secure Encryption**: Hide messages inside images with password protection.
 - **Decryption Mechanism**: Retrieve the hidden message only with the correct passcode.
