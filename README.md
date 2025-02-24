@@ -25,14 +25,13 @@ This project is a **Steganography App** that allows users to **hide and retrieve
 │   ├── script.js         # JavaScript for client-side logic
 │── 📂 templates           # HTML templates
 │   ├── index.html        # Main webpage
+│── AICTExIBM Intern ppt   # PPT
+│── README.md              # Project Documentation
+│── app.py                # Main Flask application
 │── 📂 encryption_module   # Encryption-related files
 │   ├── encryption.py     # Encryption logic
 │── 📂 decryption_module   # Decryption-related files
 │   ├── decryption.py     # Decryption logic
-│── app.py                # Main Flask application
-│── requirements.txt       # Dependencies (Flask, OpenCV, etc.)
-│── README.md              # Project Documentation
-│── .gitignore             # Files to ignore in GitHub
 ````
 
 ## 📂 How to Run the Project
